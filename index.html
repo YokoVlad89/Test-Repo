@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+            crossorigin="anonymous" />
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
+        <link rel="stylesheet" href="./css/style.min.css" />
+        <title>Attendance</title>
+    </head>
+    <body>
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-dark bg-cyan-600">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="./index.html"
+                        ><svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="32"
+                            height="32"
+                            fill="currentColor"
+                            class="bi bi-mortarboard-fill"
+                            viewBox="0 0 16 16">
+                            <path
+                                d="M8.211 2.047a.5.5 0 0 0-.422 0l-7.5 3.5a.5.5 0 0 0 .025.917l7.5 3a.5.5 0 0 0 .372 0L14 7.14V13a1 1 0 0 0-1 1v2h3v-2a1 1 0 0 0-1-1V6.739l.686-.275a.5.5 0 0 0 .025-.917l-7.5-3.5Z" />
+                            <path
+                                d="M4.176 9.032a.5.5 0 0 0-.656.327l-.5 1.7a.5.5 0 0 0 .294.605l4.5 1.8a.5.5 0 0 0 .372 0l4.5-1.8a.5.5 0 0 0 .294-.605l-.5-1.7a.5.5 0 0 0-.656-.327L8 10.466 4.176 9.032Z" />
+                        </svg>
+                    </a>
+                    <div class="navbar-collapse navbar-nav-scroll">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link active" href="index.html"
+                                    >Attendance</a
+                                >
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Schedule</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Homework</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="navbar-collapse justify-content-end">
+                        <ul class="navbar-nav navbar-dark">
+                            <li class="nav-item navbar-brand">
+                                <a href="#" class="nav-link"
+                                    ><i class="bi bi-bell-fill"></i
+                                ></a>
+                            </li>
+                            <li class="nav-item navbar-brand">
+                                <a href="#" class="nav-link">
+                                    <i class="bi bi-person-circle"></i>
+                                </a>
+                            </li>
+                            <li class="nav-item navbar-brand">
+                                <a href="#" class="nav-link">
+                                    <i class="bi bi-door-open"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <div class="container-md">
+                <div class="text-center py-5">
+                    <p class="display-6">23 APRIL, TUESDAY</p>
+                </div>
+                <ul class="row list-unstyled first-row">
+                    <li class="col-sm-1 py-1 text-center">
+                        <span class="small"> 1 lesson</span>
+                    </li>
+                    <li class="col-sm-1 py-1 text-center">
+                        <span class="small"> 2 lesson</span>
+                    </li>
+                    <li class="col-sm-1 py-1 text-center">
+                        <span class="small"> 3 lesson</span>
+                    </li>
+                    <li class="col-sm-1 py-1 text-center">
+                        <span class="small"> 4 lesson</span>
+                    </li>
+                    <li class="col-sm-1 py-1 text-center">
+                        <span class="small"> 5 lesson</span>
+                    </li>
+                    <li class="col-sm-1 py-1 text-center">
+                        <span class="small"> 6 lesson</span>
+                    </li>
+                    <li class="col-sm-1 py-1 text-center">
+                        <span class="small"> 7 lesson</span>
+                    </li>
+                    <li class="col-sm-1 py-1 text-center">
+                        <span class="small"> 8 lesson</span>
+                    </li>
+                    <li class="col"><span></span></li>
+                </ul>
+                <ul class="row list-unstyled second-row mt-2">
+                    <li class="col-sm-2">
+                        <span class="col-12 text-secondary">Group</span>
+                        <p class="col-12">ABC-1234</p>
+                    </li>
+                    <li class="col-sm-2">
+                        <span class="col-12 text-secondary">Subject</span>
+                        <p class="col-12">HTML & CSS</p>
+                    </li>
+                    <li class="col-sm-4 col-4">
+                        <span class="col-12 text-secondary">Lesson topic</span>
+                        <input class="col-12 border-1 rounded-1" type="text" />
+                    </li>
+                    <li class="col-sm-3">
+                        <div class="row">
+                            <span class="col-12 text-secondary">Homework</span>
+                            <a
+                                class="col-xxl-8 col-xl-10 col-lg-12 col-md-12 col-sm-12"
+                                href="https://mystat.itstep.org/ua/main/homework/page/index">
+                                <button class="col-12 btn btn-sm">
+                                    Add homework
+                                </button>
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+                <table class="table">
+                    <thead>
+                        <tr class="table-info">
+                            <th scope="col"></th>
+                            <th scope="col" class="text-start text-white">
+                                Name
+                            </th>
+                            <th scope="col" class="text-center px-2 text-white">
+                                GPA
+                            </th>
+                            <th scope="col" class="text-center px-2 text-white">
+                                Is present
+                            </th>
+                            <th scope="col" class="text-center px-2 text-white">
+                                Test
+                            </th>
+                            <th scope="col" class="text-center px-2 text-white">
+                                Classwork
+                            </th>
+                            <th scope="col" class="text-center px-2 text-white">
+                                Comment
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="align-middle">
+                            <th scope="row" class="text-center">1</th>
+                            <td class="col-3">Ashton Hickman</td>
+                            <td class="col-1 text-center"><span>10</span></td>
+                            <td class="col-1">
+                                <div class="radio-main d-flex gap-2">
+                                    <div class="form-check">
+                                        <input
+                                            class="form-check-input border-success"
+                                            type="radio"
+                                            name="flexRadioDefault1"
+                                            id="flexRadioDefault1" />
+                                    </div>
+                                    <div class="form-check">
+                                        <input
+                                            class="form-check-input border-warning"
+                                            type="radio"
+                                            name="flexRadioDefault1"
+                                            id="flexRadioDefault2" />
+                                    </div>
+                                    <div class="form-check">
+                                        <input
+                                            class="form-check-input border-danger"
+                                            type="radio"
+                                            name="flexRadioDefault1"
+                                            id="flexRadioDefault3" />
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="col-1">
+                                <select
+                                    class="form-select form-select-sm text-center"
+                                    aria-label=".form-select-sm example">
+                                    <option selected>-</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                </select>
+                            </td>
+                            <td class="col-1">
+                                <select
+                                    class="form-select form-select-sm text-center"
+                                    aria-label=".form-select-sm example">
+                                    <option selected>-</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                </select>
+                            </td>
+                            <td>
+                                <textarea
+                                    class="form-control"
+                                    id="exampleFormControlTextarea1"
+                                    rows="1"></textarea>
+                            </td>
+                        </tr>
+                        <tr class="align-middle">
+                            <th scope="row" class="text-center">2</th>
+                            <td class="col-3">Mischa Roberson</td>
+                            <td class="col-1 text-center"><span>9</span></td>
+                            <td class="col-1">
+                                <div class="radio-main d-flex gap-2">
+                                    <div class="form-check">
+                                        <input
+                                            class="form-check-input border-success"
+                                            type="radio"
+                                            name="flexRadioDefault2"
+                                            id="flexRadioDefault1" />
+                                    </div>
+                                    <div class="form-check">
+                                        <input
+                                            class="form-check-input border-warning"
+                                            type="radio"
+                                            name="flexRadioDefault2"
+                                            id="flexRadioDefault2" />
+                                    </div>
+                                    <div class="form-check">
+                                        <input
+                                            class="form-check-input border-danger"
+                                            type="radio"
+                                            name="flexRadioDefault2"
+                                            id="flexRadioDefault3" />
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="col-1">
+                                <select
+                                    class="form-select form-select-sm text-center"
+                                    aria-label=".form-select-sm example">
+                                    <option selected>-</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                </select>
+                            </td>
+                            <td class="col-1">
+                                <select
+                                    class="form-select form-select-sm text-center"
+                                    aria-label=".form-select-sm example">
+                                    <option selected>-</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                </select>
+                            </td>
+                            <td>
+                                <textarea
+                                    class="form-control"
+                                    id="exampleFormControlTextarea1"
+                                    rows="1"></textarea>
+                            </td>
+                        </tr>
+                        <tr class="align-middle">
+                            <th scope="row" class="text-center">3</th>
+                            <td class="col-3">Jaydon Metcalfe</td>
+                            <td class="col-1 text-center"><span>11</span></td>
+                            <td class="col-1">
+                                <div class="radio-main d-flex gap-2">
+                                    <div class="form-check">
+                                        <input
+                                            class="form-check-input border-success"
+                                            type="radio"
+                                            name="flexRadioDefault3"
+                                            id="flexRadioDefault1" />
+                                    </div>
+                                    <div class="form-check">
+                                        <input
+                                            class="form-check-input border-warning"
+                                            type="radio"
+                                            name="flexRadioDefault3"
+                                            id="flexRadioDefault2" />
+                                    </div>
+                                    <div class="form-check">
+                                        <input
+                                            class="form-check-input border-danger"
+                                            type="radio"
+                                            name="flexRadioDefault3"
+                                            id="flexRadioDefault3" />
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="col-1">
+                                <select
+                                    class="form-select form-select-sm text-center"
+                                    aria-label=".form-select-sm example">
+                                    <option selected>-</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                </select>
+                            </td>
+                            <td class="col-1">
+                                <select
+                                    class="form-select form-select-sm text-center"
+                                    aria-label=".form-select-sm example">
+                                    <option selected>-</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                </select>
+                            </td>
+                            <td>
+                                <textarea
+                                    class="form-control"
+                                    id="exampleFormControlTextarea1"
+                                    rows="1"></textarea>
+                            </td>
+                        </tr>
+                        <tr class="align-middle">
+                            <th scope="row" class="text-center">4</th>
+                            <td class="col-3">Gary Jacobson</td>
+                            <td class="col-1 text-center"><span>8</span></td>
+                            <td class="col-1">
+                                <div class="radio-main d-flex gap-2">
+                                    <div class="form-check">
+                                        <input
+                                            class="form-check-input border-success"
+                                            type="radio"
+                                            name="flexRadioDefault4"
+                                            id="flexRadioDefault1" />
+                                    </div>
+                                    <div class="form-check">
+                                        <input
+                                            class="form-check-input border-warning"
+                                            type="radio"
+                                            name="flexRadioDefault4"
+                                            id="flexRadioDefault2" />
+                                    </div>
+                                    <div class="form-check">
+                                        <input
+                                            class="form-check-input border-danger"
+                                            type="radio"
+                                            name="flexRadioDefault4"
+                                            id="flexRadioDefault3" />
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="col-1">
+                                <select
+                                    class="form-select form-select-sm text-center"
+                                    aria-label=".form-select-sm example">
+                                    <option selected>-</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                </select>
+                            </td>
+                            <td class="col-1">
+                                <select
+                                    class="form-select form-select-sm text-center"
+                                    aria-label=".form-select-sm example">
+                                    <option selected>-</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                </select>
+                            </td>
+                            <td>
+                                <textarea
+                                    class="form-control"
+                                    id="exampleFormControlTextarea1"
+                                    rows="1"></textarea>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </main>
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+            crossorigin="anonymous"></script>
+    </body>
+</html>
