@@ -118,13 +118,73 @@
                     <li class="col-sm-3">
                         <div class="row">
                             <span class="col-12 text-secondary">Homework</span>
-                            <a
-                                class="col-xxl-8 col-xl-10 col-lg-12 col-md-12 col-sm-12"
-                                href="https://mystat.itstep.org/ua/main/homework/page/index">
-                                <button class="col-12 btn btn-sm">
-                                    Add homework
-                                </button>
-                            </a>
+                            <!-- Button trigger modal -->
+                            <button
+                                type="button"
+                                class="btn main-button col-6"
+                                data-bs-toggle="modal"
+                                data-bs-target="#staticBackdrop">
+                                Add homework
+                            </button>
+                            <!-- Modal -->
+                            <div
+                                class="modal fade"
+                                id="staticBackdrop"
+                                data-bs-backdrop="static"
+                                data-bs-keyboard="false"
+                                tabindex="-1"
+                                aria-labelledby="staticBackdropLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h1
+                                                class="modal-title fs-5"
+                                                id="staticBackdropLabel">
+                                                New homework
+                                            </h1>
+                                            <button
+                                                type="button"
+                                                class="btn-close"
+                                                data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="mb-3">
+                                                <label
+                                                    for="recipient-name"
+                                                    class="col-form-label pb-0 text-secondary"
+                                                    >Topic:</label
+                                                >
+                                                <input
+                                                    type="text"
+                                                    class="form-control mt-1"
+                                                    id="recipient-name" />
+                                            </div>
+                                            <div class="mb-3">
+                                                <input
+                                                    class="form-control"
+                                                    type="file"
+                                                    id="formFile" />
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button
+                                                type="button"
+                                                class="btn btn-secondary"
+                                                data-bs-dismiss="modal">
+                                                Close
+                                            </button>
+                                            <button
+                                                type="button"
+                                                class="btn main-button"
+                                                data-bs-dismiss="modal">
+                                                Save
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </li>
                 </ul>

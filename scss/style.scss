@@ -24,19 +24,16 @@
     }
     .second-row {
         li {
-            span {
+            span{
                 font-size: smaller;
             }
-            button {
-                width: 70%;
+            .main-button {
                 background-color: #0aa2c0;
                 color: white;
             }
             p,
             input,
-            button {
-                margin-top: 20px;
-            }
+            
         }
     }
 }
