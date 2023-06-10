@@ -22,8 +22,7 @@
 .container-md .second-row li span {
   font-size: smaller;
 }
-.container-md .second-row li button {
-  width: 70%;
+.container-md .second-row li .main-button {
   background-color: #0aa2c0;
   color: white;
 }
